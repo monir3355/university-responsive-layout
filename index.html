@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grid Layout</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png">
+                </a>
+                <div class="nav-link" id="navLink">
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="banner">
+            <h1>World's biggest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, deserunt at? Similique, non recusandae quasi maxime quibusdam sapiente quis itaque!</p>
+            <a href="#" class="btn">Visit Here</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Courses -->
+        <section class="courses all-section">
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos laboriosam magnam ducimus eaque praesentium.</p>
+            <div class="row">
+                <div class="course-clumn">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos praesentium necessitatibus placeat vero hic repellat odit ullam quisquam soluta cum.</p>
+                </div>
+                <div class="course-clumn">
+                    <h3>Degree</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos praesentium necessitatibus placeat vero hic repellat odit ullam quisquam soluta cum.</p>
+                </div>
+                <div class="course-clumn">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos praesentium necessitatibus placeat vero hic repellat odit ullam quisquam soluta cum.</p>
+                </div>
+            </div>
+        </section>
+        <!-- University -->
+        <section class="university-name all-section">
+            <h1>Our Global Campuses</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum facilis quae corrupti est! Vitae.</p>
+            <div class="row">
+                <div class="university-column">
+                    <img src="./images/london.png">
+                    <div class="pic-layer">
+                        <h3>London</h3>
+                    </div>
+                </div>
+                <div class="university-column">
+                    <img src="./images/newyork.png">
+                    <div class="pic-layer">
+                        <h3>New York</h3>
+                    </div>
+                </div>
+                <div class="university-column">
+                    <img src="./images/washington.png">
+                    <div class="pic-layer">
+                        <h3>Washington</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- Facilities -->
+            <section class="facilities all-section">
+                <h1>Our Facilities</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus itaque labore doloremque cupiditate earum!</p>
+
+                <div class="row">
+                    <div class="facilitie-clumn">
+                        <div>
+                            <img src="./images/library.png" alt="">
+                        </div>
+                        <h3>World Class Library</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus veritatis odio</p>
+                    </div>
+                    <div class="facilitie-clumn">
+                        <div class="facili-img">
+                            <img src="./images/cafeteria.png" alt="">
+                        </div>
+                        <h3>Tasty and healthy Food</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus veritatis odio</p>
+                    </div>
+                    <div class="facilitie-clumn">
+                        <div class="facili-img">
+                            <img src="./images/basketball.png" alt="">
+                        </div>
+                        <h3>Largest Play Ground</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus veritatis odio</p>
+                    </div>
+                </div>
+            </section>
+            <!-- reviews -->
+            <section class="reviews all-section">
+                <h1>Our student Reviews</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, veniam sit magnam assumenda at quod?</p>
+                <div class="row">
+                    <div class="review-col">
+                        <div>
+                            <img src="./images/user1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quo reiciendis recusandae, accusantium commodi unde!</p>
+                            <h3>Orindila Hoque</h3>
+                            <p><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="review-col">
+                        <div>
+                            <img src="./images/user1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quo reiciendis recusandae, accusantium commodi unde!</p>
+                            <h3>Orindila Hoque</h3>
+                            <p><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star filled"></i><i class="fa-solid fa-star"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Enroll -->
+            <section class="enroll">
+                <div class="enroll-text">
+                    <h2>Enroll for our various online courses any from the world</h2>
+                    <a href="#" class="btn">Contact us</a>
+                </div>
+            </section>
+            <!-- about-us -->
+            <section class="about-us all-section">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure earum rem repudiandae provident minima.</p>
+                <div class="about-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer>
+                <p>This Website &copy; by Monirul Islam</p>
+            </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        let navLink = document.getElementById("navLink");
+        function showMenu(){
+                navLink.style.right="0";
+            }
+            function closeMenu(){
+                navLink.style.right="-200px";
+            }
+           
+    </script>
+</body>
+</html>

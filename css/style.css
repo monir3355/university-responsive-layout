@@ -1,0 +1,359 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --gray: #757575;
+    --red: #ff0000;
+    --box-shadow: box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.all-section > h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 80px 0 10px 0;
+}
+.all-section > p {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 50px;
+    color: var(--gray);
+}
+/* Header */
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.logo{
+    text-decoration: none;
+}
+.logo img{
+    width: 160px;
+}
+.nav-link ul {
+    display: flex;
+    gap: 30px;
+}
+.nav-link ul li {
+    list-style: none;
+}
+
+.nav-link ul li::after{
+    content: ' ';
+    width: 0;
+    height: 2px;
+    border-bottom: 3px solid var(--red);
+    display: block;
+    margin: 0 auto;
+    transition: .5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.nav-link ul li a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.banner{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+}
+.banner h1 {
+    font-size: 62px;
+}
+.banner p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 2rem 0;
+}
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    border: 1px solid var(--white);
+    padding: .8rem 3rem;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    box-shadow: var(--box-shadow);
+}
+nav .fa-solid{
+    display: none;
+    color: var(--white);
+    padding-top: 20px;
+    font-size: 22px;
+}
+/* Courses */
+.course-clumn{
+    padding: 40px 20px;
+    background-color: #fdf1f1;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+.course-clumn h3 {
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+.course-clumn:hover{
+    background-color: #f0c4c4d2;
+}
+/* University */
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+.university-column {
+    position: relative;
+}
+.university-column img{
+    position: relative;
+    display: block;
+}
+.pic-layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.pic-layer:hover{
+    background-color: rgba(226, 0, 0, 0.7);
+    cursor: pointer;
+}
+.pic-layer h3{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: var(--white);
+    transition: .5s;
+    font-size: 22px;
+}
+.pic-layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+/* Facilities */
+.facilitie-clumn {
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.facilitie-clumn div img{
+    border-radius: 10px;
+}
+.facilitie-clumn h3 {
+    font-size: 20px;
+    padding: 12px 0;
+}
+.facilitie-clumn p {
+    color: var(--gray);
+}
+/* reviews */
+.reviews {
+    margin-bottom: 50px;
+}
+.review-col {
+    display: flex;
+    gap: 50px;
+    background-color: #fdf1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+.review-col div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.review-col h3{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+.review-col p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.review-col p .filled{
+    color: #ff0000;
+}
+/* enroll */
+.enroll {
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10%;
+    color: var(--white);
+    text-align: center;
+}
+.enroll h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+/* about-us */
+.about-us {
+    padding-bottom: 50px;
+}
+.about-icon {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.about-icon a {
+    text-decoration: none;
+}
+.about-icon a i{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.about-icon a i:hover{
+    color: #ff0000;
+}
+/* Footer */
+footer {
+    padding: 40px;background-color: #fdf1f1;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-link{
+        flex-direction: column;
+        background-color: var(--red);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        position: absolute;
+        color: var(--white);
+        padding-left: 20px;
+        transition: .5s;
+    }
+    nav{
+        align-items: flex-start;
+    }
+    nav .fa-solid{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-link i{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .nav-link ul{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link ul li a{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .all-section > h1{
+        font-size: 30px;
+    }
+    .all-section > p{
+        font-size: 14px;
+    }
+    nav{
+        align-items: flex-start;
+    }
+    nav .fa-solid{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-link{
+        flex-direction: column;
+        background-color: var(--red);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        position: absolute;
+        color: var(--white);
+        padding-left: 20px;
+        transition: .5s;
+    }
+    .nav-link i{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .nav-link ul{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link ul li a{
+        font-size: 14px;
+    }
+    .banner h1{
+        font-size: 26px;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 12px;
+        padding: .6rem 1rem;
+    }
+    /* Courses */
+    .course-clumn p{
+        font-size: 14px;
+    }
+    /* facilities */
+    .facilitie-clumn p{
+        font-size: 14px;
+    }
+    /* Enroll */
+    .enroll h2{
+        font-size: 30px;
+    }
+}
